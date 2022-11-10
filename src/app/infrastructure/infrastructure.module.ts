@@ -4,12 +4,14 @@ import { FacilitiesComponent } from './facilities/facilities.component';
 import { RouterModule } from '@angular/router';
 import { InfrastructureRoutes } from './infrastructure.routing';
 import { SharedModule } from '../shared/shared.module';
+import { ActivitiesComponent } from './activities/activities.component';
 
 
 
 @NgModule({
   declarations: [
-    FacilitiesComponent
+    FacilitiesComponent,
+    ActivitiesComponent
   ],
   imports: [
     CommonModule,

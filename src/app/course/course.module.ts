@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { McomComponent } from './mcom/mcom.component';
 import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { CourseRoutes } from './course.routing';
 import { HomeModule } from '../home/home.module';
+import { BbaComponent } from './bba/bba.component';
 
 
 
 @NgModule({
   declarations: [
-    McomComponent
+    BbaComponent
   ],
   imports: [
     CommonModule,

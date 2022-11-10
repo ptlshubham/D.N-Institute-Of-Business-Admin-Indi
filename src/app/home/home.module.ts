@@ -14,6 +14,7 @@ import { RightImageTextComponent } from './right-image-text/right-image-text.com
 import { SectionCoursesComponent } from './section-courses/section-courses.component';
 import { SectionMessageComponent } from './section-message/section-message.component';
 import { StatisticsIncrementorComponent } from './statistics-incrementor/statistics-incrementor.component';
+import { HomeAboutComponent } from './home-about/home-about.component';
 
 
 
@@ -27,7 +28,8 @@ import { StatisticsIncrementorComponent } from './statistics-incrementor/statist
     RightImageTextComponent,
     SectionCoursesComponent,
     SectionMessageComponent,
-    StatisticsIncrementorComponent
+    StatisticsIncrementorComponent,
+    HomeAboutComponent
   ],
   imports: [
     CommonModule,
@@ -45,7 +47,8 @@ import { StatisticsIncrementorComponent } from './statistics-incrementor/statist
     RightImageTextComponent,
     SectionCoursesComponent,
     SectionMessageComponent,
-    StatisticsIncrementorComponent
+    StatisticsIncrementorComponent,
+    HomeAboutComponent
   ]
 })
 export class HomeModule { }
