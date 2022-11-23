@@ -4,7 +4,7 @@ import { Routes } from '@angular/router';
 export const AppRoutes: Routes = [
     {
         path: '',
-        redirectTo: 'home/main',
+        redirectTo: '/home',
         pathMatch: 'full',
     },
     {

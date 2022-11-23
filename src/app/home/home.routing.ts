@@ -5,7 +5,7 @@ export const HomeRoutes: Routes = [{
     path: '',
     children: [
     {
-        path: 'main',
+        path: '',
         component: MainComponent
     },
     ]
