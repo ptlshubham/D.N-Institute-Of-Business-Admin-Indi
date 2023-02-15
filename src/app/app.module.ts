@@ -11,6 +11,9 @@ import { InfrastructureModule } from './infrastructure/infrastructure.module';
 import { DepartmentModule } from './department/department.module';
 import { CourseModule } from './course/course.module';
 import { MoreModule } from './more/more.module';
+import { HttpClientModule } from '@angular/common/http';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { ToastrModule } from 'ngx-toastr';
 
 
 @NgModule({
@@ -29,7 +32,11 @@ import { MoreModule } from './more/more.module';
     InfrastructureModule,
     DepartmentModule,
     CourseModule,
-    MoreModule
+    MoreModule,
+    NgxPaginationModule,
+    ToastrModule.forRoot(),
+    HttpClientModule
+
      
   ],
   providers: [],

@@ -9,6 +9,8 @@ import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { BasicRoutes } from './basic.routing';
 import { HomeModule } from '../home/home.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 
 
@@ -19,12 +21,15 @@ import { HomeModule } from '../home/home.module';
     ContactComponent,
     GalleryComponent,
     TrustComponent,
+  
   ],
   imports: [
     CommonModule,
     SharedModule,
     RouterModule.forChild(BasicRoutes),
-    HomeModule
+    HomeModule,
+    FormsModule,
+    ReactiveFormsModule
 
   ]
 })
