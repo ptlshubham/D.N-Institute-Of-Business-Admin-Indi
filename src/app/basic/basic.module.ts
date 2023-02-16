@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
 import { BasicRoutes } from './basic.routing';
 import { HomeModule } from '../home/home.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { InfrastructureComponent } from './infrastructure/infrastructure.component';
 
 
 
@@ -21,6 +22,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ContactComponent,
     GalleryComponent,
     TrustComponent,
+    InfrastructureComponent,
   
   ],
   imports: [

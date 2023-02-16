@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { Routes } from '@angular/router';
 import { AcademicCalendarComponent } from './academic-calendar/academic-calendar.component';
 import { CampusComponent } from './campus/campus.component';
-import { LibraryComponent } from './library/library.component';
 import { MagazineComponent } from './magazine/magazine.component';
 import { NewsComponent } from './news/news.component';
 import { PaperComponent } from './paper/paper.component';
@@ -14,10 +13,6 @@ import { SyllabusComponent } from './syllabus/syllabus.component';
 export const MoreRoutes: Routes = [{
     path: '',
     children: [
-        {
-            path: 'library',
-            component: LibraryComponent
-        },
         {
             path: 'result',
             component: ResultComponent

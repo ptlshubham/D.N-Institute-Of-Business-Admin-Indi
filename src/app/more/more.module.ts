@@ -4,7 +4,6 @@ import { HomeModule } from '../home/home.module';
 import { RouterModule } from '@angular/router';
 import { MoreRoutes } from './more.routing';
 import { SharedModule } from '../shared/shared.module';
-import { LibraryComponent } from './library/library.component';
 import { ResultComponent } from './result/result.component';
 import { CampusComponent } from './campus/campus.component';
 import { SearchComponent } from './search/search.component';
@@ -22,7 +21,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
-    LibraryComponent,
     ResultComponent,
     CampusComponent,
     SearchComponent,
@@ -32,7 +30,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NewsComponent,
     PaperComponent,
     ScholarshipsComponent,
-    SyllabusComponent
+    SyllabusComponent,
+    NewsComponent
   ],
   imports: [
     NgbModule,
@@ -41,6 +40,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomeModule,
     SharedModule,
     NgxPaginationModule
+  ],
+  exports:[
+    FormComponent,
+    ResultComponent,
+    CampusComponent,
+    SearchComponent,
+    PaperComponent,
+    SyllabusComponent
   ]
 })
+
 export class MoreModule { }

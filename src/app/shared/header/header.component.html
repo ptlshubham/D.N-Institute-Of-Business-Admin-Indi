@@ -148,11 +148,11 @@
                         </li>
 
                         <li class="menu-item lm">
-                            <a href="http://www.cesociety.in/#/celebration">Centenary Celebration</a>
+                            <a href="http://www.cesociety.in/#/celebration" target="_blank">Centenary Celebration</a>
                         </li>
                         |
                         <li class="menu-item lm">
-                            <a routerLink="/more/news" routerLinkActive="active" target="_blank">News</a>
+                            <a routerLink="/more/news" routerLinkActive="active">News</a>
                         </li>
                         |
                         <li class="menu-item lm">
@@ -160,7 +160,7 @@
                         </li>
                         |
                         <li class="menu-item lm">
-                            <a href="http://www.cesociety.in/#/celebration">Free counseling</a>
+                            <a href="http://www.cesociety.in/#/celebration"  target="_blank">Free counseling</a>
                         </li>
                     </ul>
 
@@ -194,10 +194,6 @@
                             <li><a class="dropdown-item" routerLink="/basic/about" routerLinkActive="active">History</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" routerLink="/infra/facilities"
-                                    routerLinkActive="active">Facilities</a>
-                            </li>
-                            <li>
                                 <a class="dropdown-item" routerLink="/infra/activities"
                                     routerLinkActive="active">Activities</a>
                             </li>
@@ -208,14 +204,19 @@
                             aria-expanded="false">Gallery</a>
 
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" routerLink="/gallery/photos" routerLinkActive="active">Photo &
-                                    Video Albums</a> </li>
+                            <li><a class="dropdown-item" routerLink="/gallery/photos" routerLinkActive="active">Photo</a> </li>
+                            <li><a routerLink="/more/magazine" routerLinkActive="active">Our
+                                Magazine Balmitra</a> </li>
                             <!-- <li><a class="dropdown-item">Photos</a> </li> -->
                             <!-- <li><a class="dropdown-item">Documentary Film</a> </li>
                             <li><a class="dropdown-item">Our Magazine Balmitra</a> </li> -->
                         </ul>
                     </li>
+                    <!-- infrastructure -->
+                    <li class="">
+                        <a routerLink="/basic/infrastructure" routerLinkActive="active">Infrastructure</a>
 
+                    </li>
                     <li class="btn-group">
                         <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">Course</a>
@@ -227,22 +228,44 @@
                     <li class="btn-group">
                         <a class="btn btn-lg" routerLink="/basic/contact" routerLinkActive="active">Contact Us</a>
                     </li>
-                    <li class="btn-group">
-                        <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">More</a>
-                        <ul class="dropdown-menu">
-                            <!-- <li><a class="dropdown-item"   routerLinkActive="active">Department</a> </li> -->
-                            <li><a class="dropdown-item" routerLink="/more/result" routerLinkActive="active">Results</a>
+                    <li class="menu-item-has-children">
+                        <a routerLink="" routerLinkActive="active">More</a>
+                        <ul class="sub-menu">
+                            <!-- <li><a routerLink="" routerLinkActive="active">Department</a> </li> -->
+                            <li><a routerLink="/more/result" routerLinkActive="active">Results</a>
                             </li>
-                            <li><a class="dropdown-item" routerLink="/more/library"
-                                    routerLinkActive="active">Library</a>
+                            <li>
+                                <a routerLink="/more/news" routerLinkActive="active">News</a>
                             </li>
-
-
-                            <li><a class="dropdown-item"   routerLinkActive="active"
-                                    >Form</a> </li>
-                            <li><a class="dropdown-item"   routerLinkActive="active"
-                                    >Annual Reports</a>
+                            <li>
+                                <a routerLink="/basic/committee"
+                                    routerLinkActive="active">Committee</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a>Student Corner</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item-has-children current-menu-item">
+                                        <a routerLink="/more/academic-calendar"
+                                            routerLinkActive="active">Academic Calendar</a>
+                                    </li>
+                                    <li class="current-menu-item">
+                                        <a (click)="openLinks('syllabus')">Syllabus</a>
+                                    </li>
+                                    <li class="menu-item-has-children current-menu-item">
+                                        <a routerLink="/more/paper" routerLinkActive="active">Old
+                                            Question Papers</a>
+                                    </li>
+                                    <li class="menu-item-has-children current-menu-item">
+                                        <a routerLink="/more/scholarship"
+                                            routerLinkActive="active">Scholarships for Students</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a (click)="openLinks('forms')">Form</a>
+                            </li>
+                            <li>
+                                <a (click)="openLinks('report')">Reports</a>
                             </li>
                         </ul>
                     </li>
@@ -277,10 +300,6 @@
                                                 <li><a routerLink="/basic/about" routerLinkActive="active">History</a>
                                                 </li>
                                                 <li>
-                                                    <a routerLink="/infra/facilities"
-                                                        routerLinkActive="active">Facilities</a>
-                                                </li>
-                                                <li>
                                                     <a routerLink="/infra/activities"
                                                         routerLinkActive="active">Activities</a>
                                                 </li>
@@ -297,7 +316,11 @@
                                                     <ul class="sub-menu">
                                                         <li class="current-menu-item">
                                                             <a routerLink="/department/staff"
-                                                                routerLinkActive="active">Staff Details</a>
+                                                            routerLinkActive="active">Staff Details</a>
+                                                        </li>
+                                                        <li class="current-menu-item">
+                                                            <a routerLink="/department/student"
+                                                            routerLinkActive="active">Student Details</a>
                                                         </li>
                                                         <!-- <li class="menu-item-has-children current-menu-item">
                                                             <a routerLink="/department/student"
@@ -319,33 +342,62 @@
                                             <a  >Gallery</a>
 
                                             <ul class="sub-menu">
-                                                <li><a routerLink="/gallery/photos" routerLinkActive="active">Photo &
-                                                        Video Albums</a>
+                                                <li><a routerLink="/gallery/photos" routerLinkActive="active">Photo</a>
                                                 </li>
+                                                <li><a routerLink="/more/magazine" routerLinkActive="active">Our
+                                                    Magazine Balmitra</a> </li>
                                                 <!-- <li><a  >Photos</a> </li> -->
                                                 <!-- <li><a  >Documentary Film</a> </li>
                                                 <li><a  >Our Magazine Balmitra</a> </li> -->
                                             </ul>
+                                        </li>
+                                        <!-- Infrastructure -->
+                                        <li class="">
+                                            <a routerLink="/basic/infrastructure" routerLinkActive="active">Infrastructure</a>
+                    
                                         </li>
                                         <li class="">
                                             <a routerLink="/basic/contact" routerLinkActive="active">Contact Us</a>
                                         </li>
 
                                         <li class="menu-item-has-children">
-                                            <a   routerLinkActive="active">More</a>
+                                            <a routerLink="" routerLinkActive="active">More</a>
                                             <ul class="sub-menu">
-                                                <!-- <li><a   routerLinkActive="active">Department</a> </li> -->
+                                                <!-- <li><a routerLink="" routerLinkActive="active">Department</a> </li> -->
                                                 <li><a routerLink="/more/result" routerLinkActive="active">Results</a>
                                                 </li>
-                                                <li><a routerLink="/more/library" routerLinkActive="active">Library</a>
+                                                <li>
+                                                    <a routerLink="/more/news" routerLinkActive="active">News</a>
                                                 </li>
-
-
-                                                <li class="">
-                                                    <a ><span>Form</span></a>
+                                                <li>
+                                                    <a routerLink="/basic/committee"
+                                                        routerLinkActive="active">Committee</a>
                                                 </li>
-                                                <li class="">
-                                                    <a ><span>Annual Reports</span></a>
+                                                <li class="menu-item-has-children">
+                                                    <a>Student Corner</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item-has-children current-menu-item">
+                                                            <a routerLink="/more/academic-calendar"
+                                                                routerLinkActive="active">Academic Calendar</a>
+                                                        </li>
+                                                        <li class="current-menu-item">
+                                                            <a (click)="openLinks('syllabus')">Syllabus</a>
+                                                        </li>
+                                                        <li class="menu-item-has-children current-menu-item">
+                                                            <a routerLink="/more/paper" routerLinkActive="active">Old
+                                                                Question Papers</a>
+                                                        </li>
+                                                        <li class="menu-item-has-children current-menu-item">
+                                                            <a routerLink="/more/scholarships"
+                                                                routerLinkActive="active">Scholarships for Students</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a (click)="openLinks('forms')">Form</a>
+                                                </li>
+                                                <li>
+                                                    <a (click)="openLinks('report')">Reports</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -388,10 +440,6 @@
                                                             routerLinkActive="active">History</a>
                                                     </li>
                                                     <li>
-                                                        <a routerLink="/infra/facilities"
-                                                            routerLinkActive="active">Facilities</a>
-                                                    </li>
-                                                    <li>
                                                         <a routerLink="/infra/activities"
                                                             routerLinkActive="active">Activities</a>
                                                     </li>
@@ -408,6 +456,10 @@
                                                             <li class="current-menu-item">
                                                                 <a routerLink="/department/staff"
                                                                     routerLinkActive="active">Staff Details</a>
+                                                            </li>
+                                                            <li class="current-menu-item">
+                                                                <a routerLink="/department/student"
+                                                                    routerLinkActive="active">Student Details</a>
                                                             </li>
                                                             <!-- <li class="menu-item-has-children current-menu-item">
                                                                 <a routerLink="/department/student"
@@ -429,30 +481,62 @@
                                                 <a  >Gallery</a>
 
                                                 <ul class="sub-menu">
-                                                    <li><a routerLink="/gallery/photos" routerLinkActive="active">Photo
-                                                            & Video Albums</a> </li>
+                                                    <li><a routerLink="/gallery/photos" routerLinkActive="active">Photo</a> </li>
+                                                    <li><a routerLink="/more/magazine" routerLinkActive="active">Our
+                                                        Magazine Balmitra</a> </li>
                                                     <!-- <li><a  >Photos</a> </li> -->
                                                     <!-- <li><a  >Documentary Film</a> </li>
                                                     <li><a  >Our Magazine Balmitra</a> </li> -->
                                                 </ul>
                                             </li>
+                                            <!-- Infrastructure -->
+                                            <li class="">
+                                                <a routerLink="/basic/infrastructure" routerLinkActive="active">Infrastructure</a>
+                        
+                                            </li>
                                             <li class="">
                                                 <a routerLink="/basic/contact" routerLinkActive="active">Contact Us</a>
                                             </li>
-                                            <li class="menu-item-has-children">
-                                                <a   routerLinkActive="active">More</a>
-                                                <ul class="sub-menu">
-                                                    <!-- <li><a   routerLinkActive="active">Department</a> </li> -->
-                                                    <li><a routerLink="/more/result"
-                                                            routerLinkActive="active">Results</a> </li>
-                                                    <li><a routerLink="/more/library"
-                                                            routerLinkActive="active">Library</a> </li>
 
-                                                    <li class="">
-                                                        <a ><span>Form</span></a>
+                                            <!-- 11111 -->
+                                            <li class="menu-item-has-children">
+                                                <a routerLink="" routerLinkActive="active">More</a>
+                                                <ul class="sub-menu">
+                                                    <!-- <li><a routerLink="" routerLinkActive="active">Department</a> </li> -->
+                                                    <li><a routerLink="/more/result" routerLinkActive="active">Results</a>
                                                     </li>
-                                                    <li class="">
-                                                        <a ><span>Annual Reports</span></a>
+                                                    <li>
+                                                        <a routerLink="/more/news" routerLinkActive="active">News</a>
+                                                    </li>
+                                                    <li>
+                                                        <a routerLink="/basic/committee"
+                                                            routerLinkActive="active">Committee</a>
+                                                    </li>
+                                                    <li class="menu-item-has-children">
+                                                        <a>Student Corner</a>
+                                                        <ul class="sub-menu">
+                                                            <li class="menu-item-has-children current-menu-item">
+                                                                <a routerLink="/more/academic-calendar"
+                                                                    routerLinkActive="active">Academic Calendar</a>
+                                                            </li>
+                                                            <li class="current-menu-item">
+                                                                <a (click)="openLinks('syllabus')">Syllabus</a>
+                                                            </li>
+                                                            <li class="menu-item-has-children current-menu-item">
+                                                                <a routerLink="/more/paper" routerLinkActive="active">Old
+                                                                    Question Papers</a>
+                                                            </li>
+                                                            <li class="menu-item-has-children current-menu-item">
+                                                                <a routerLink="/more/scholarship"
+                                                                    routerLinkActive="active">Scholarships for Students</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <a (click)="openLinks('forms')">Form</a>
+                                                    </li>
+                                                    <li>
+                                                        <a (click)="openLinks('report')">Reports</a>
                                                     </li>
                                                 </ul>
                                             </li>
