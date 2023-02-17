@@ -20,7 +20,7 @@ header.navbar-sticky-on,
   opacity: 1;
 }
 .modal-dialog.modal-notify.modal-info .modal-header {
-  background-color: #7d4d63;
+  background-color: #885b5d;
 }
 .modal-dialog .modal-content .modal-header {
   border-top-left-radius: 0.125rem;
@@ -175,7 +175,7 @@ a{
     transition: opacity .25s ease-out, height .15s ease;
     cursor: default;
     user-select: none;
-    background-color: #7d4d63 !important;
+    background-color: #885b5d !important;
   }
   
   .sticky {
@@ -196,24 +196,24 @@ a{
   
   .searchTerm {
     width: 100%;
-    border: 3px solid #7d4d63;
+    border: 3px solid #885b5d;
     border-right: none;
     padding: 5px;
     height: 36.5px;
     border-radius: 5px 0 0 5px;
     outline: none;
-    color: #7d4d63;
+    color: #885b5d;
   }
   
   .searchTerm:focus{
-    color: #7d4d63;
+    color: #885b5d;
   }
   
   .searchButton {
     width: 40px;
     height: 36px;
-    border: 1px solid #7d4d63;
-    background: #7d4d63;
+    border: 1px solid #885b5d;
+    background: #885b5d;
     text-align: center;
     color: #fff;
     border-radius: 0 5px 5px 0;
@@ -298,7 +298,7 @@ a{
 
 .dropdown-item.active, .dropdown-item:active{
   background-color: #fff !important;
-  color: #7d4d63;
+  color: #885b5d;
   
 }
 
@@ -306,7 +306,7 @@ a{
 
 .card1{
   margin: 30px;
-  background-color: #7d4d63;
+  background-color: #885b5d;
     font-family: calibri, 'Open Sans', sans-serif;
     font-size: 18px;
     padding: 25px;
