@@ -15,6 +15,7 @@ import { SectionCoursesComponent } from './section-courses/section-courses.compo
 import { SectionMessageComponent } from './section-message/section-message.component';
 import { StatisticsIncrementorComponent } from './statistics-incrementor/statistics-incrementor.component';
 import { HomeAboutComponent } from './home-about/home-about.component';
+import { QuickConnectComponent } from './quick-connect/quick-connect.component';
 
 
 
@@ -29,7 +30,8 @@ import { HomeAboutComponent } from './home-about/home-about.component';
     SectionCoursesComponent,
     SectionMessageComponent,
     StatisticsIncrementorComponent,
-    HomeAboutComponent
+    HomeAboutComponent,
+    QuickConnectComponent
   ],
   imports: [
     CommonModule,
